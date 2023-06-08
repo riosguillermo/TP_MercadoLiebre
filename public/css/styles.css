@@ -1,0 +1,231 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+p{
+    font-size: 12px;
+}
+
+a { 
+    color: inherit; 
+} 
+
+body{
+    background-color: #ebebeb;
+    margin:0;
+}
+
+/*Header -----------------------------------------------------*/
+header{
+    background-color: #EAC926;
+}
+
+.header_lista{
+    padding: 0;
+    list-style: none;
+}
+
+.header_barra_navegacion{   
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: none;
+}
+.header_barra_apartadologin{
+    padding: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: none;
+}
+
+.header_barra_menuDesplegable{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+
+
+/*Main -----------------------------------------------------*/
+main{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.main_contenedorDeProductos_producto{
+    margin: 15px;
+}
+.main_listaDetallesDeUnProducto{
+    border-top: 1px solid #ebebeb;
+    margin-top: 0px;
+    background-color: white;
+    padding: 0;
+    list-style: none;
+}
+
+.imagenDeProducto{
+    width: 100%;
+    height: 100%;
+}
+
+/*Footer -----------------------------------------------------*/
+.footer_tarjeta{
+    text-align: center;
+}
+
+.footer_icono{
+   margin-bottom: 10px;
+}
+
+.titulares{
+    font-size: 24px;
+}
+
+.iconoEnvios{
+    height: 1.8rem;
+    width: 1.8rem;
+    border: 1px solid #39b54a;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.precios{
+    font-size: 18px;
+}
+
+.descuentos{
+    color: #39b54a;
+    font-size: 16px;
+}
+
+.descripciones{
+    display: none;
+    font-size: 16px;
+}
+
+.descripcionesTarjeta{
+    font-size: 16px;
+}
+
+
+@media only screen and (max-width: 768px) and (min-width: 361px) { /*TABLET ------------------------------------- */
+    .header_barra{
+        white-space: nowrap;
+        display: block;
+    }
+
+    .header_primeraLinea{
+        white-space: nowrap;
+        display: flex;
+    }
+
+    .header_barra_logo{
+        
+        display: flex;
+    }
+
+    .header_barra_busqueda{
+        
+        align-self: center;
+        display: flex;
+    }
+
+    .header_barra_navegacion{
+        display: inline-block;
+        justify-content: space-between;
+    }
+
+    .navegacion{
+        margin-right: auto;
+    }
+
+    .usuario{
+        margin-left: auto;
+    }
+
+    .header_barra_menuDesplegable{
+        display: none;
+    }
+
+    .header_lista li{
+        display: inline-flex;
+    }
+
+    .main_contenedorDeProductos_producto{
+        box-shadow : 0px 0px 10px rgb(100,100,100);
+
+    }
+
+    .descripciones{
+        display: block;
+    }
+
+}
+
+@media only screen and (min-width: 769px) { /*DESKTOP ------------------------------------- */
+    .header_barra{
+        white-space: nowrap;
+        display: block;
+    }
+
+    .header_primeraLinea{
+        white-space: nowrap;
+        display: flex;
+    }
+
+    .header_barra_logo{
+        white-space: nowrap;
+        display: flex;
+    }
+
+    .header_barra_busqueda{
+        white-space: nowrap;
+        align-self: center;
+        display: flex;
+    }
+
+    .header_barra_navegacion{  
+        white-space: nowrap;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navegacion{
+        margin-right: auto;
+    }
+
+    .usuario{
+        margin-left: auto;
+    }
+
+    .header_barra_menuDesplegable{
+        display: none;
+    }
+    .header_lista li{
+        display: inline-flex;
+    }
+
+    .main_contenedorDeProductos{
+        display: flex;
+        margin-bottom: 100px;
+    }
+
+    .main_contenedorDeProductos_producto{
+        box-shadow : 0px 0px 10px rgb(100,100,100);
+
+    }
+    .descripciones{
+        display: block;
+    }
+
+
+
+    .footer_ContenedorDeTarjetas{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .footer_tarjeta{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
